@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Document Title </title>
+
+    <style>
+        /* CSS implementasjon metode 2, via egen <style> tag i <head> 
+            
+        h1 {
+            text-align: left; 
+        }
+
+        */
+
+    </style>  
+    
+    <!-- Kobling til ekstern css-fil, CSS implementasjon metode 3  -->
+    <link rel="stylesheet" href="02styles.css"> 
+    
+</head>
+
+<body>
+    
+    <h1 id="toppen">Store ringstind</h1>  
+    <br><br><br><br>
+
+    <header style="color:blue;">Header</header>
+    <!-- CSS implementasjon metode 1, vha style attributtet i en tag -->
+          
+    <section class="redsection">Red section</section>
+    
+    <p id="para1">Javascript kan endre denne teksten ... :-) </p>      
+
+    <!-- Ved klikk på knappen kalles en funksjon skrevet i javascript, se egen fil -->
+    <button type="button" onclick="myFunction()">Klikker du her, endres teksten over</button>
+    
+    <br><br>
+    <div> Box1   </div>
+    <div> Box2  </div>
+    <div> Box3   </div>
+    <br> <br> <br> <br><br>    <br>     
+   
+   
+          
+    
+    <!-- Javascript         
+        Denne funksjonen er flyttet ut i javascript fila henvist til over
+        function myFunction() {
+            document.getElementById("para1").innerHTML = "Paragraph changed.";
+        }   
+    -->
+    <script src="03javascript.js">  
+        cons
+    </script>  
+       
+    
+</body>
+
+</html>
+

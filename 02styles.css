@@ -1,0 +1,53 @@
+/* External CSS file */
+
+body {
+    background-color:papayawhip;
+    background:url("sr.jpg");
+    background-repeat: no-repeat;
+}
+
+h1 {                                /*Store ringstind */
+    color: red;
+    font-family:'Lucida Sans', 'Lucida Sans Regular'; 
+    font-size:5em;                  /* skriftstørrelse */           
+    position: absolute ;            /* tekstjustering */
+    left:5em;                       /* tekstjustering */
+}
+
+h2 {
+    position: absolute ;            /* stacking         */
+}
+
+img {
+    position: absolute ;            /* stacking         */ 
+    z-index: -1;
+}
+
+.redsection {                       /* section */                        
+                        
+    color: red;  
+    float:right;                    /* float         */
+}                               
+                                
+#para1 { /* Paragraph */
+    color: red;
+} 
+
+p::first-letter {                   /* pseudo-element */
+    font-size: 250%;
+    color:red;
+}
+
+
+div {
+    display:inline-block;        /* display vertikalt eller horsontalt */
+    /* display:none; */
+    width:50px ;
+    height:50px ;
+    border:solid ;
+    margin:4px ;
+    background:pink ;
+    
+
+}
+
