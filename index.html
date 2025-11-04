@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Document Title </title>
+
+    <style>
+        /* CSS implementasjon metode 2, via egen <style> tag i <head> 
+            
+        h1 {
+            text-align: left; 
+        }
+
+        */
+
+        body {
+    background-color:papayawhip;
+    background:url("sr.jpg");
+    background-repeat: no-repeat;
+}
+
+h1 {                                /*Store ringstind */
+    color: red;
+    font-family:'Lucida Sans', 'Lucida Sans Regular'; 
+    font-size:5em;                  /* skriftstørrelse */           
+    position: absolute ;            /* tekstjustering */
+    left:5em;                       /* tekstjustering */
+}
+
+h2 {
+    position: absolute ;            /* stacking         */
+}
+
+img {
+    position: absolute ;            /* stacking         */ 
+    z-index: -1;
+}
+
+.redsection {                       /* section */                        
+                        
+    color: red;  
+    float:right;                    /* float         */
+}                               
+                                
+#para1 { /* Paragraph */
+    color: red;
+} 
+
+p::first-letter {                   /* pseudo-element */
+    font-size: 250%;
+    color:red;
+}
+
+
+div {
+    display:inline-block;        /* display vertikalt eller horsontalt */
+    /* display:none; */
+    width:50px ;
+    height:50px ;
+    border:solid ;
+    margin:4px ;
+    background:pink ;
+    
+
+}
+
+
+    </style>  
+    
+    <!-- Kobling til ekstern css-fil, CSS implementasjon metode 3  -->
+    <link rel="stylesheet" href="02styles.css"> 
+    
+</head>
+
+<body>
+    
+    <h1 id="toppen">Store ringstind</h1>  
+    <br><br><br><br>
+
+    <header style="color:blue;">Header</header>
+    <!-- CSS implementasjon metode 1, vha style attributtet i en tag -->
+          
+    <section class="redsection">Red section</section>
+    
+    <p id="para1">Javascript kan endre denne teksten ... :-) </p>      
+
+    <!-- Ved klikk på knappen kalles en funksjon skrevet i javascript, se egen fil -->
+    <button type="button" onclick="myFunction()">Klikker du her, endres teksten over</button>
+    
+    <br><br>
+    <div> Box1   </div>
+    <div> Box2  </div>
+    <div> Box3   </div>
+    <br> <br> <br> <br><br>    <br>     
+   
+   
+          
+    
+    <!-- Javascript         
+        Denne funksjonen er flyttet ut i javascript fila henvist til over
+        function myFunction() {
+            document.getElementById("para1").innerHTML = "Paragraph changed.";
+        }   
+    -->
+    <script>  
+
+        // My external javascript file
+
+function myFunction() {
+    document.getElementById("para1").innerHTML = "No prob med Javascript.";
+}
+
+    </script>  
+       
+    
+</body>
+
+</html>
+
